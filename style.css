@@ -37,9 +37,10 @@ body{
   box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
 }
 
-/* .carousel-inner .carousel-item img {
+.carousel-inner .carousel-item img {
   filter: grayscale(100%);
-} */
+  object-fit: cover;
+}
 
 @media only screen and (min-width: 1080px) {
   .my-navbar{
