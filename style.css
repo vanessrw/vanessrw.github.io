@@ -37,11 +37,55 @@ body{
   box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
 }
 
-.carousel-inner .carousel-item img {
-  filter: grayscale(100%);
+.card-container {
+  margin-bottom: 80px;
+}
+
+.card {
+  border: 1px solid black;
+  width: fit-content;
+  row-gap: 10px;
+}
+
+.hero {
+  height: 800px; /* adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   object-fit: cover;
 }
 
+.hero .carousel-item .active img {
+  object-fit: cover;
+  width: 100%;
+  height: 800px;
+}
+
+
+.hero .carousel-item img {
+  width: 100%;
+  height: 800px;
+}
+
+@media only screen and (max-width: 768px){
+  .hero {
+    height: 310px; 
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+  }
+  
+  .hero .carousel-item .active img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+  }
+
+  .hero .carousel-item img {
+    width: 100%;
+    height: 250px;
+  }
+}
 @media only screen and (min-width: 1080px) {
   .my-navbar{
     padding: 15px;
